@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec image de fond</title>
+    <style>
+        body {
+            background-image: url('https://www.canon.fr/media/eos-1d-x-markii-image-management_tcm79-1345922.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+        }
 
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .image-container div {
+            margin: 20px;
+            text-align: center;
+            color: #fff;
+            flex: 0 0 calc(33.33% - 40px); /* Trois colonnes avec un espace entre elles */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Taille maximale en pourcentage de la largeur du conteneur */
+            height: auto; /* Hauteur automatique pour conserver les proportions */
+        }
+
+        /* CSS pour l'image en haut à droite */
+        .top-right-image {
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            width: 50px; /* Largeur souhaitée */
+            height: auto; /* Hauteur automatique pour conserver les proportions */
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://star16fpv.github.io/Galerie-cross/">
+        <img src="https://lh3.google.com/u/0/d/1lK7rf-OLSixRGHrr9gWZj_OkdsYt3nj-=w1879-h970-iv1" alt="Image en haut à droite" class="top-right-image">
+    </a>
+
+    <h1>Gable Mathias Digitale Albums</h1>
+    <div class="image-container">
+        
+        
+        <div>
+            <a href="https://drive.google.com/drive/folders/1dUYwY9nMG6p1FANbAzcDoEYhyPfFfBCn?usp=sharing" target="_blank"><img src="https://lh3.google.com/u/2/d/1dEntYB-KG-uzsbS-WzWXwK3v1Oae2x0U=w1879-h970-iv1" alt="Image 3" class="custom-image" style="border-radius: 15px;">
+            <p style="font-size:25px; color: white;">Photos Zoo Bâle 24/07/2022</p>
+        </div>
+
+    </div>
+</body>
+</html>
